@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | ICT Consultancy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0c0c0c;
+      color: #f3f3f3;
+    }
+
+    .hero {
+      background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.9)), 
+                  url('https://images.unsplash.com/photo-1529333166437-7750a6dd5a70') no-repeat center center;
+      background-size: cover;
+      padding: 100px 20px 60px;
+      text-align: center;
+      color: #ffe57f;
+      position: relative;
+    }
+
+    .home-button {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+
+    .home-button a {
+      text-decoration: none;
+      background-color: #ffe57f;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .home-button a:hover {
+      background-color: #ffcc00;
+    }
+
+    .hero h1 {
+      font-size: 3.2rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 8px #000;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #f3f3f3;
+      text-shadow: 1px 1px 5px #000;
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .section h2 {
+      font-size: 1.8rem;
+      color: #80e27e;
+      border-left: 5px solid #80e27e;
+      padding-left: 14px;
+      margin-bottom: 12px;
+    }
+
+    .section p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: #d9d9d9;
+      margin-bottom: 40px;
+    }
+
+    .leadership {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      margin-top: 30px;
+    }
+
+    .leader-card {
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .leader-card:hover {
+      transform: translateY(-5px);
+      border-color: #ffe57f;
+    }
+
+    .leader-card h3 {
+      color: #ffe57f;
+      margin-bottom: 5px;
+    }
+
+    .leader-card p {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+
+    .slogan {
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #80e27e;
+      margin: 70px 0 40px;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    @media(max-width: 600px) {
+      .hero h1 { font-size: 2.3rem; }
+      .hero p { font-size: 1rem; }
+      .slogan { font-size: 1.1rem; }
+      .home-button { top: 15px; left: 15px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="home-button">
+      <a href="homepage.php">← Home</a>
+    </div>
+    <h1>About Us</h1>
+    <p>Driven by purpose, powered by ICT — we empower communities through digital knowledge and creative problem-solving.</p>
+  </div>
+
+  <div class="section">
+    <h2>Mission</h2>
+    <p>To educate and inform about ICT by making digital skills accessible and practical for everyone in Kenya and beyond.</p>
+
+    <h2>Vision</h2>
+    <p>To empower individuals and institutions with knowledge and ICT solutions that enable them to thrive in the digital era.</p>
+
+    <h2>History</h2>
+    <p>Since 2020, Violet Wachira has led a mission to bridge the digital gap. What started as a personal vision grew into a national consultancy serving students, businesses, and institutions with ICT training and support.</p>
+
+    <h2>Leadership</h2>
+    <div class="leadership">
+      <div class="leader-card"><h3>Violet Wachira</h3><p>Founder & CEO</p></div>
+      <div class="leader-card"><h3>James Bond</h3><p>Chief Tech Officer</p></div>
+      <div class="leader-card"><h3>Mary Lynn</h3><p>Director of Client Service</p></div>
+      <div class="leader-card"><h3>John Kibe</h3><p>Head of Cyber Security</p></div>
+      <div class="leader-card"><h3>Andrew Wanjema</h3><p>Supervisor</p></div>
+    </div>
+
+    <h2>Tour</h2>
+    <p>We organize visits to national ICT infrastructure sites including data centers and the ICT Authority headquarters to expose learners to real-world ICT operations.</p>
+  </div>
+
+  <div class="slogan">WE PROVIDE ICT DIGITAL SKILLS TO THE PUBLIC</div>
+
+</body>
+</html>

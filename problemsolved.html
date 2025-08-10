@@ -1,0 +1,108 @@
+<?php 
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+    exit();
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Problems Solved | ICT Consultancy</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .background {
+      background-image: url('https://images.unsplash.com/photo-1605379399642-870262d3d051');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      position: relative;
+      color: white;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    /* Home button */
+    .home-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 10;
+    }
+    .home-button a {
+      text-decoration: none;
+      background-color: #ffd700;
+      color: #000;
+      padding: 8px 16px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .home-button a:hover {
+      background-color: #e6c200;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    li {
+      font-size: 1.4em;
+      margin: 10px 0;
+    }
+
+    li::before {
+      content: "✔ ";
+      color: #00ffcc;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="background">
+    <div class="overlay">
+      <div class="home-button">
+        <a href="Homepage.php">← Home</a>
+      </div>
+
+      <h1>Problems Solved</h1>
+      <ul>
+        <li>Lack of awareness and visibility</li>
+        <li>Educating clients on ICT solutions and trends</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<?php
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+    exit();
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Core Requirements - ICT Consultancy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 60px 20px;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 30px;
+      color: #00e6b8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    h1 img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .section h2 {
+      font-size: 2em;
+      margin-bottom: 15px;
+      color: #fdd835;
+    }
+
+    .section p {
+      font-size: 1.15em;
+      line-height: 1.7;
+      color: #e0f7fa;
+    }
+
+    .home-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 28px;
+      font-size: 1.1em;
+      font-weight: bold;
+      background-color: #00d1b2;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .home-btn:hover {
+      background-color: #00b49c;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="container">
+      <h1>
+        <img src="https://img.icons8.com/color/48/maintenance.png" alt="icon" />
+        Core Requirements
+      </h1>
+
+      <div class="section">
+        <h2>Service Offerings & Solutions</h2>
+        <p>Our consultancy provides tailored digital solutions, including cloud-based infrastructure, learning management systems, and tech integration support to uplift educational institutions in Kenya.</p>
+      </div>
+
+      <div class="section">
+        <h2>Security and Data Privacy</h2>
+        <p>We protect your information with state-of-the-art encryption, routine audits, and full compliance with data protection laws to ensure absolute confidentiality and peace of mind.</p>
+      </div>
+
+      <a href="index.php" class="home-btn">← Back to Homepage</a>
+    </div>
+  </div>
+</body>
+</html>

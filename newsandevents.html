@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>newsandevents | ICT Consultancy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 60px 20px;
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .home-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 10;
+    }
+    .home-button a {
+      text-decoration: none;
+      background-color: #ffd700;
+      color: #000;
+      padding: 8px 16px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .home-button a:hover {
+      background-color: #e6c200;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 30px;
+      color: #00ffc8;
+      text-shadow: 2px 2px 5px #000;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .section {
+      background-color: rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 30px;
+      margin: 20px auto;
+      max-width: 850px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      animation: fadeIn 2s ease;
+      width: 90%;
+      text-align: left;
+    }
+
+    h2 {
+      font-size: 2em;
+      color: #ffdb4d;
+      margin-bottom: 15px;
+      text-decoration: underline;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    ul {
+      padding-left: 20px;
+      color: #f0f0f0;
+    }
+
+    li {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="home-button">
+      <a href="Homepage.php">← Home</a>
+    </div>
+
+    <h1>News &amp; Events</h1>
+
+    <div class="section">
+      <h2>News</h2>
+      <ul>
+        <li>Magazines</li>
+        <li>Memos</li>
+        <li>Noticeboards</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Events</h2>
+      <ul>
+        <li>Ajira – Digital Work Opportunities</li>
+        <li>Programming – Coding Bootcamps &amp; Workshops</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
